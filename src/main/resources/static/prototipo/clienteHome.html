@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DewesFood</title>
+		<link rel="sortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="CSS/df_estiloSistema.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="divLogotipoSistema">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<!-- Coloque aqui o que tiver de mais relevante e em comum com as
+				demais páginas do site -->
+				<a href="">	<!--  Possivel link para voltar para a Home -->
+					<img src="images/df_logotipoSistema.png" id="imgLogotipoSistema"/>
+				</a>
+			</div> 
+			
+			<div id="divUsuarioLogado">
+				Olá Nome do Usuário
+				<br/>
+				<img src="images/df_iconeCarrinho.png" id="imgIconeCarrinho"/>
+			</div>
+		</header>
+		<br><br>
+		<!-- Cabeçalho - FIM -->
+		
+		<div>
+			<h1>É hora de rangar!!</h1>
+			<form method="post" action="clienteBusca.html">
+				<fieldset id="fieldsetFiltros">
+					<input type="text" name="busca" placeholder="Pesquisa"/>
+					<input type="submit" value="buscar"/>
+				</fieldset>			
+			</form>
+		</div>
+		
+		<div id="divCategoriasComidaGeral">			
+			<div id="divCategoriasComidaOpcao">
+				<a href="#">
+					<span id="auxiliarDeAlinhamentoVertical"></span>
+					<img src="images/sys_categoriaChurrasco.png" id="imgCategoriaComida"/>
+					<br/>
+					<span>Churrasco</span>
+				</a>				
+			</div>
+			
+			<div id="divCategoriasComidaOpcao">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<a href="#">
+					<img src="images/sys_categoriaHamburguer.png" id="imgCategoriaComida"/>
+					<br/>
+					<span>Hamburger</span>
+				</a>				
+			</div>
+			
+			<div id="divCategoriasComidaOpcao">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<a href="#">
+					<img src="images/sys_categoriaPizza.png" id="imgCategoriaComida"/>
+					<br/>
+					<span>Pizza</span>
+				</a>				
+			</div>
+			
+			<div id="divCategoriasComidaOpcao">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<a href="#">
+					<img src="images/sys_categoriaSalada.png" id="imgCategoriaComida"/>
+					<br/>
+					<span>Salada</span>
+				</a>				
+			</div>
+			
+			<div id="divCategoriasComidaOpcao">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<a href="#">
+					<img src="images/sys_categoriaSobremesa.png" id="imgCategoriaComida"/>
+					<br/>
+					<span>Sobremesa</span>
+				</a>				
+			</div>			
+		</div>
+		
+		<div>
+			<h1>Cupons disponíveis</h1>
+			<input type="button" value="10% Hamburger"/>
+			<br/>
+			<input type="button" value="15% Pizza"/>
+			<br/>
+		</div>
+		
+		<div>
+			<h1>Últimos pedidos</h1>
+			<input type="Button" value="#15124 MCBlunalds"/><br/>
+			<input type="Button" value="#35464 Blue Pizza"/><br/>
+			<input type="Button" value="#38754 Hard Blue"/><br/>
+		</div>
+		
+		<div>
+			<h1>Conta</h1>
+			<input type="button" value="Meus dados"/>
+			<br/>
+			<input type="button" value="Sair" onClick="location.href='index.html';"/>
+			<br/>
+		</div>
+				
+		<!-- Rodapé - Início -->
+		<div id="rodape">
+			<span id="auxiliarDeAlinhamentoVertical"></span>
+			<a href="https://github.com/cristianodewes" target="_blank">
+				<img src="images/df_iconeGitHub.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.linkedin.com/in/cristiano-antonio-dewes/" target="_blank">
+				<img src="images/df_iconeLinkedin.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.facebook.com/cristiano.dewes" target="_blank">
+				<img src="images/df_iconeFacebook.png" id="imgRodape"/>
+			</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DewesFood</title>
+		<link rel="sortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="CSS/df_estiloSistema.css"/>
+	</head>
+	<body>
+		<header>
+				<div id="divLogotipoSistema">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<!-- Coloque aqui o que tiver de mais relevante e em comum com as
+				demais páginas do site -->
+				<a href="">	<!--  Possivel link para voltar para a Home -->
+					<img src="images/df_logotipoSistema.png" id="imgLogotipoSistema"/>
+				</a>
+			</div> 
+			
+			<div id="divUsuarioLogado">
+				Olá Nome do Usuário
+				<br/>
+				<img src="images/df_iconeCarrinho.png" id="imgIconeCarrinho"/>
+			</div>
+		</header>
+		<br><br>
+		<!-- Cabeçalho - FIM -->
+		
+		<div id="divRestauranteOpcao">
+			<img src="images/sys_restauranteSbubby.png" id="imgRestauranteOpcao"/>
+			<br/>
+			<span>Nome do restaurante</span>
+			<br/>
+			<span>Categoria de comida</span>
+			<br/>
+			<span>Tempo médio de entrega: 40min</span>
+			<br/>
+			<span>Taxa de entrega: R$ 15,00</span>
+			<br/>
+		</div>
+		
+		<div>
+			<h1>Opções</h1>
+			<fieldset>
+				<legend>Filtros</legend>
+				<input type="button" value="Promoções"/>
+				<input type="button" value="Saladas"/>
+				<input type="button" value="Bebidas"/>
+				<input type="button" value="Pizzas"/>
+			</fieldset>
+			<br/>
+		</div>
+		
+		<div>
+			<h1>Destaques</h1>
+		</div>
+		
+		<div>
+			
+			<div id="divRestauranteOpcao">
+				<img src="images/sys_comidaPizzaCalabresa.png" id="imgRestauranteOpcao"/>
+				<br/>
+				<span>Pizza de Calabresa</span>
+				<br/>
+				<span>Massa fina, queijo, calabresa e pimenta</span>
+				<br/>
+				<span>R$ 45,00</span>
+				<br/>
+				<form method="post" action="">
+					<label for="quantidade">Quantidade: </label>
+					<br/>
+					<select name="quantidade" id="quantidade">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<br/>
+					<br/>
+					Observações
+					<br/>
+					<textarea></textarea>
+					<br/>
+					<br/>
+					<input type="button" value="Adicionar ao carrinho" onClick="location.href='clienteCarrinho.html';"/>
+				</form>
+			</div>
+			
+			<div id="divRestauranteOpcao">
+				<img src="images/sys_comidaHamburguer.png" id="imgRestauranteOpcao"/>
+				<br/>
+				<span>Hamburguer</span>
+				<br/>
+				<span>Pão, hamburger 200g, queijo, tomate, alface, queijo</span>
+				<br/>
+				<span>R$ 30,00</span>
+				<br/>
+				<form method="post" action="">
+					<label for="quantidade">Quantidade: </label>
+					<br/>
+					<select name="quantidade" id="quantidade">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<br/>
+					<br/>
+					Observações
+					<br/>
+					<textarea></textarea>
+					<br/>
+					<br/>
+					<input type="button" value="Adicionar ao carrinho" onClick="location.href='clienteCarrinho.html';"/>
+				</form>
+			</div>
+			
+		</div>
+		
+		<input type="button" value="Voltar" onClick="location.href='clienteBusca.html';">
+		
+		<!-- Rodapé - Início -->
+		<div id="rodape">
+			<span id="auxiliarDeAlinhamentoVertical"></span>
+			<a href="https://github.com/cristianodewes" target="_blank">
+				<img src="images/df_iconeGitHub.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.linkedin.com/in/cristiano-antonio-dewes/" target="_blank">
+				<img src="images/df_iconeLinkedin.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.facebook.com/cristiano.dewes" target="_blank">
+				<img src="images/df_iconeFacebook.png" id="imgRodape"/>
+			</a>
+		</div>
+	</body>
+</html>

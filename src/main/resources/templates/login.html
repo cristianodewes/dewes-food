@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout}">
+
+	<body>
+		<div layout:fragment="content">
+			<div>
+				<img th:src="@{/images/df_iconeUsuario.png}" id="imgIconeUsuario" />
+				<h1>Autenticação</h1>
+				<form method="post" action="clienteHome.html">
+					<fieldset>
+						<input type="text" name="email" placeholder="Digite seu e-mail" />
+						<input type="password" name="senha" placeholder="Digite sua senha" /><br />
+						<input type="submit" value="Entrar" />
+					</fieldset>
+				</form>
+				<br />
+
+				<div id="divMensagemDeErro">Aqui vai um exemplo de menssagem de
+					erro</div>
+				<br /> Criar conta <a th:href="@{/public/cliente/new}">Usuário</a>
+				<!-- <input type="button" value="Criar conta usuário"> -->
+				<br /> Criar conta <a th:href="@{/public/restaurante/new}">Restaurante</a>
+				<!-- <input type="button" value="Criar conta restaurante"> -->
+			</div>
+		</div>
+	</body>
+</html>

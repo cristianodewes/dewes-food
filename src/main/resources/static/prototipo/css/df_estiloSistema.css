@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+* 
+{
+	font-family: "Verdana";	
+}
+
+body
+{
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+div#divLogotipoSistema
+{
+	background-color: #FF2D00;
+	height: 120px;
+}
+
+span#auxiliarDeAlinhamentoVertical
+{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+img#imgIconeUsuario
+{
+	width: 100px;
+}
+
+img#imgLogotipoSistema
+{
+	height: 90%;
+	vertical-align: middle;
+}
+
+img#imgErro
+{
+	height: 100px;
+}
+
+h1
+{
+	background-color: #EEEEEE;
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 2px solid #000000;
+	border-top: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}
+
+div#divMensagemDeErro
+{
+	background-color: #D40000;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FFFFFF;
+}
+
+div#divMensagemDeSucesso
+{
+	background-color: #00ff00;
+	font-weight : bold;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000000;
+}
+
+div#rodape
+{
+	background-color: #FFFFFF;
+	height: 80px;
+	text-align: right;	
+}
+
+div#divUsuarioLogado
+{
+	background-color: #c0c0c0;
+	color: #FFFFFF;
+	line-height: 40px;
+}
+
+img#imgIconeCarrinho
+{
+	height: 100px;	
+}
+
+form
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input, textarea, select
+{
+	border: 2px solid #9b0000;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+textarea
+{
+	width: 300px;
+	height: 100px;
+}
+
+input[type=text], 
+input[type=password]
+{
+	font-size: 16px;
+	width: 200px;
+	padding-left: 8px;
+}
+
+input[type=button], 
+input[type=submit]
+{
+	background-color: #D40000;
+	border-bottom: 4px solid #7d0404;
+	border-right: 3px solid #7d0404;
+	border-left: 1px solid #7d0404;
+	border-top: 1px solid #7d0404;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px 5px;
+}
+
+input[type=button]:hover, 
+input[type=submit]:hover
+{
+	text-decoration: underline;
+	border-bottom: 1px solid #7d0404;
+	border-right: 1px solid #7d0404;
+	background-color: #f82929;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	background-color:  #FFFFFF;
+	font-size: 14px;
+	border-spacing: 2px;
+}
+
+
+tr:nth-child(even)
+{
+	background-color:  #DDDDDD;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #FFFFFF;
+}
+
+th
+{
+	background-color: #7d0404;
+	color: #FFFFFF;
+	padding: 3px;
+	text-transform: uppercase;
+}
+
+td
+{
+	padding: 5px;
+}
+
+fieldset
+{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 2px;
+}
+
+img#imgRodape
+{
+	height: 80%;
+	vertical-align: middle;
+}
+
+div#divCategoriasComidaOpcao
+{
+	height: 100px;
+	float: right;
+}
+
+div#divCategoriasComidaGeral
+{
+	width : 400px;
+	margin : auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+img#imgCategoriaComida
+{
+	height: 50%;
+	vertical-align: middle;
+}
+
+fieldset#fieldsetFiltros
+{
+	padding-top: 7px;
+	padding-bottom: 0px;
+}
+
+input#inputSelecionado
+{
+	background-color: #FF2D00;
+	border-bottom: 1px solid #7d0404;
+	border-right: 1px solid #7d0404;
+}
+
+img#imgRestauranteOpcao
+{
+	height: 130px;
+}
+
+span#nomeRestaurante
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+div#divRestauranteOpcao
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: auto;
+}
+
+.inputError
+{
+	border: 2px solid #ff0000;
+}
+
+div#divRestauranteCarrinho
+{
+	width: 400px;
+	margin: auto;
+	height: 300px;
+}
+
+img#imgRestauranteCarrinho
+{
+	width: 60%;
+}

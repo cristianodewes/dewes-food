@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DewesFood</title>
+		<link rel="sortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="CSS/df_estiloSistema.css"/>
+		
+		<script>
+			function isNumberKey(evt) {
+				var charCode = (evt.wich) ? evt.wich : event.keyCode;
+				
+				if(charCode>47 && charCode<58){
+					return true;
+				}
+				
+				return false;			
+			}
+		</script>
+		
+	</head>
+	<body>
+		<header>
+				<div id="divLogotipoSistema">
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<!-- Coloque aqui o que tiver de mais relevante e em comum com as
+				demais páginas do site -->
+				<a href="">	<!--  Possivel link para voltar para a Home -->
+					<img src="images/df_logotipoSistema.png" id="imgLogotipoSistema"/>
+				</a>
+			</div> 
+			
+			<div id="divUsuarioLogado">
+				Olá Nome do Usuário
+				<br/>
+				<img src="images/df_iconeCarrinho.png" id="imgIconeCarrinho"/>
+			</div>
+		</header>
+		<br><br>
+		<!-- Cabeçalho - FIM -->
+		
+		<div id="divRestauranteCarrinho">
+			<h1>Seu pedido</h1>
+			<span id="auxiliarDeAlinhamentoVertical"></span>
+			<img src="images/sys_restaurantePizzaBrut.png" id="imgRestauranteCarrinho"/>
+		</div>
+		<br/><br/>
+		
+		<div>
+			<span>Pizza Calabresa</span><br/>
+			<span>Qtd: 1</span><br/>
+			<span>(exemplo de observação, quando houver)</span><br/>
+			<span>R$ 45,00</span><br/><br/>
+			<input type="button" value="Remover"/>
+		</div>
+		<br/><br/>
+		
+		<div>
+			<span>Hamburger</span><br/>
+			<span>Qtd: 2</span><br/>
+			<span>(exemplo de observação, quando houver)</span><br/>
+			<span>R$ 30,00</span><br/><br/>
+			<input type="button" value="Remover"/>
+		</div>
+		<br/><br/>		
+		
+		<div>
+			<span>Taxa de entrega</span><br/>
+			<span>R$ 15,00</span>
+		</div>			
+		<br/><br/>
+		
+		<div>
+			<span>Total</span><br/>
+			<span>R$ 120,00</span>
+		</div>
+		<br/><br/>
+		
+		<div>
+			<span>Cartão de crédito</span><br/>
+			<input type="text" name="cartao" onKeyPress="return isNumberKey(event);"/>
+		</div>
+		
+		<div>
+			<input type="button" value="Enviar pedido" onClick="location.href='clientePedido.html';"/>
+			<br/>
+			<input type="button" value="Voltar" onClick="location.href='clienteHome.html';"/>
+		</div>
+		
+		<!-- Rodapé - Início -->
+		<div id="rodape">
+			<span id="auxiliarDeAlinhamentoVertical"></span>
+			<a href="https://github.com/cristianodewes" target="_blank">
+				<img src="images/df_iconeGitHub.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.linkedin.com/in/cristiano-antonio-dewes/" target="_blank">
+				<img src="images/df_iconeLinkedin.png" id="imgRodape"/>
+			</a>
+			<a href="https://www.facebook.com/cristiano.dewes" target="_blank">
+				<img src="images/df_iconeFacebook.png" id="imgRodape"/>
+			</a>
+		</div>
+	</body>
+</html>
