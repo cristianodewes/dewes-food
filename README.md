@@ -1,6 +1,6 @@
 Dewes Food
 
-Este é um projeto de um delivery de comida, em construção.
+Este é um projeto, em construção, de um delivery de comida.
 
 Estou utilizando as tecnologias: 
   HTML
