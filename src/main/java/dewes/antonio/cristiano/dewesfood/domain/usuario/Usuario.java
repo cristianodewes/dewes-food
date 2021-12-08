@@ -20,8 +20,8 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @SuppressWarnings("serial")
-@MappedSuperclass
-public class Usuario implements Serializable {
+@MappedSuperclass//fala que é uma superclasse
+public abstract class Usuario implements Serializable {
 
 	@EqualsAndHashCode.Include
 	@Id

@@ -35,7 +35,7 @@
 						 
 						<label for="email">E-mail: </label><br /> 
 						<input type="text" id="email" name="email" placeholder="Digite o seu email" th:field="*{email}"
-						th:classappend="${#fields.hasErrors('email') ? 'inputError' : ''}"/><br />
+						 th="${#fields.hasErrors('email') ? 'inputError' : ''}"/><br />
 						<div id="divMensagemDeErro" th:if="${#fields.hasErrors('email')}">
 							<span th:errors="*{email}"></span>
 						</div>
@@ -74,9 +74,7 @@
 					</fieldset>
 				</form>
 				<br /> 
-				<form method="get" th:action="@{/}">
-					<input type="submit" value="Voltar" />
-				</form>
+				<input type="submit" value="Voltar" th:onclick="'location.href=\'' + @{/cliente/home} + '\';'"/>
 			</div>
 		</div>
 	</body>

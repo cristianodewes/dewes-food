@@ -7,17 +7,19 @@
 			<div>
 				<img th:src="@{/images/df_iconeUsuario.png}" id="imgIconeUsuario" />
 				<h1>Autenticação</h1>
-				<form method="post" action="clienteHome.html">
+				<form method="post" th:action="@{/login}">
 					<fieldset>
-						<input type="text" name="email" placeholder="Digite seu e-mail" />
-						<input type="password" name="senha" placeholder="Digite sua senha" /><br />
+						<input type="text" name="username" placeholder="Digite seu e-mail" />
+						<input type="password" name="password" placeholder="Digite sua senha" /><br />
 						<input type="submit" value="Entrar" />
 					</fieldset>
 				</form>
 				<br />
-
-				<div id="divMensagemDeErro">Aqui vai um exemplo de menssagem de
-					erro</div>
+				
+				<div id="divMensagemDeErro" th:if="${msg != null}">
+					<span th:text="${msg}"></span>
+				</div>
+				
 				<br /> Criar conta <a th:href="@{/public/cliente/new}">Usuário</a>
 				<!-- <input type="button" value="Criar conta usuário"> -->
 				<br /> Criar conta <a th:href="@{/public/restaurante/new}">Restaurante</a>

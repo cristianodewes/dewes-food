@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout}">
+	
+	<body>
+		<div layout:fragment="content">
+			<div>
+				<h1>É hora de rangar!!</h1>
+				<form method="post" action="clienteBusca.html">
+					<fieldset id="fieldsetFiltros">
+						<input type="text" name="busca" placeholder="Pesquisa"/>
+						<input type="submit" value="buscar"/>
+					</fieldset>			
+				</form>
+			</div>
+			
+			<div id="divCategoriasComidaGeral">	
+					
+				<span id="auxiliarDeAlinhamentoVertical"></span>
+				<div id="divCategoriasComidaOpcao" th:each="categoria : ${categorias}">
+					<a href="#">						
+						<img th:src="@{/images/categoria/} + ${categoria.imagem}" id="imgCategoriaComida"/>
+						<br/>
+						<span th:text="${categoria.nome}"></span>
+					</a>				
+				</div>	
+			</div>
+			
+			<!-- 
+			<div>
+				<h1>Cupons disponíveis</h1>
+				<input type="button" value="10% Hamburger"/>
+				<br/>
+				<input type="button" value="15% Pizza"/>
+				<br/>
+			</div>
+			-->			
+			
+			<div>
+				<h1>Últimos pedidos</h1>
+				<input type="Button" value="#15124 MCBlunalds"/><br/>
+				<input type="Button" value="#35464 Blue Pizza"/><br/>
+				<input type="Button" value="#38754 Hard Blue"/><br/>
+			</div>
+			
+			<div>
+				<h1>Conta</h1>
+				<input type="button" value="Meus dados" th:onClick="'location.href=\'' + @{/cliente/edit} + '\';'"/>
+				<br/>
+				<input type="button" value="Sair" th:onClick="'location.href=\'' + @{/logout} + '\';'"/>
+				<br/>
+			</div>
+		</div>
+	</body>
+</html>

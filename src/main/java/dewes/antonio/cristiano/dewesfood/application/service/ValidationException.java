@@ -1,4 +1,4 @@
-package dewes.antonio.cristiano.dewesfood.application;
+package dewes.antonio.cristiano.dewesfood.application.service;
 
 @SuppressWarnings("serial")
 public class ValidationException extends Exception {
